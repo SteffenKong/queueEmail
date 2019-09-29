@@ -136,4 +136,10 @@ class Users extends Model
 
         return true;
     }
+
+    public function test()
+    {
+        DB::beginTransaction();
+//        Users::
+    }
 }
