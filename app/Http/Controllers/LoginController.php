@@ -3,9 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\admin\LoginRequest;
-use Illuminate\Http\Request;
-use App\admin\Users;
+use App\Admin\Users;
 
+/**
+ * Class LoginController
+ * @package App\Http\Controllers
+ */
 class LoginController extends Controller
 {
 
@@ -16,6 +19,7 @@ class LoginController extends Controller
     {
         $this->usersModel = new Users();
     }
+
 
 
     public function login() {

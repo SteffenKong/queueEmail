@@ -2,13 +2,20 @@
 
 namespace App\Observers;
 
-use App\admin\Users;
+use App\Admin\Users;
+use App\TraitTools\email;
 
+/**
+ * Class UsersObserver
+ * @package App\Observers
+ */
 class UsersObserver
 {
 
-    public function created(Users $user) {
+    use email;
+
+    public function creating(Users $user) {
         //TODO
-        //发送邮件
+//        $this->sendEmail();
     }
 }

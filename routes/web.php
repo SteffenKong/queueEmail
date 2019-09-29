@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+//登录
+Route::get('/login','LoginController@login');
+Route::post('/sign','LoginController@sign');
+
+//注册
+Route::get('/register','RegisterController@signIn');
+Route::post('/doRegister','RegisterController@register');
+
+//激活校验
+Route::get('/checkActiveCode','RegisterController@checkActiveCode');
