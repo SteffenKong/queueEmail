@@ -7,7 +7,6 @@ use App\TraitTools\email;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
-use Mockery\Exception;
 use Illuminate\Support\Facades\Redis;
 
 
