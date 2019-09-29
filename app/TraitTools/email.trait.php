@@ -29,8 +29,8 @@ trait email {
         //配置SMTP服务器
         $mailer = new SmtpMailer([
             'host' => 'smtp.163.com',       //利用网易163作为服务器
-            'username' => 'steffenkong',    //填写用户名
-            'password' => 'helloworld123',  //填写秘钥
+            'username' => '',    //填写用户名
+            'password' => '',  //填写秘钥
         ]);
         $mailer->send($mail);
         return true;
